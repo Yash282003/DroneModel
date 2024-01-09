@@ -1,0 +1,186 @@
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+// General
+
+
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+// Layout
+.faq_content {
+
+  margin: 1rem 2rem;
+}
+
+.faq_content .title {
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  padding: 20px 0;
+  color: #FF8598;
+
+
+}
+
+
+.faq_content .sub_title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  /* or 34px */
+
+
+  /* 1 */
+
+  color: #070217;
+
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+ 
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 90px;
+    line-height: 120%;
+    /* identical to box height, or 108px */
+    text-align: center;
+
+    color: #402325;
+  }
+
+  h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+
+    /* identical to box height, or 24px */
+
+
+    color: #402325;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    
+  }
+}
+
+
+/* Accordion styles */
+.tabs {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+}
+
+.tab {
+  width: 600px;
+  color: #402325;
+  overflow: hidden;
+  margin-top: 20px;
+
+  &-question {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    /* leading-trim and text-edge are draft CSS properties.
+    
+    Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+    */
+
+    display: flex;
+    align-items: center;
+
+    color: #402325;
+  }
+
+  &-number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: rgba(60, 60, 67, 0.5);
+  }
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+   
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &::after {
+
+      width: 1em;
+      height: 1em;
+      transition: all .35s;
+    }
+  }
+
+  &-title {}
+
+  &-content {
+    height: 0;
+
+    transition: all .35s;
+
+
+  }
+
+  &-close {
+    display: flex;
+
+    padding: 1em;
+    font-size: 0.75em;
+
+    cursor: pointer;
+
+  }
+}
+
+// :checked
+input:checked {
+  +.tab-label {}
+
+  ~.tab-content {
+    max-height: 100vh;
+    height: 10vh;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 1000px){
+  .tab-label{
+    justify-content: center;
+  }
+}

@@ -1,0 +1,253 @@
+.services-header {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header-line {
+  width: 133px;
+  height: 0px;
+  margin-top: 2%;
+  border: 1px solid #4c8700;
+  transform: rotate(-0.43deg);
+}
+.services-header h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  color: #4c8700;
+}
+.service-container {
+  margin-top: 20vh;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 33.33vw 33.33vw;
+}
+.service-container2 {
+  margin-top: 20vh;
+  margin-left: 33vw;
+  width: 33.33vw;
+}
+.future-targets {
+  margin-top: 10vh;
+}
+.future-targets h1 {
+  font-family: "Poppins";
+  margin-left: 8%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #4c8700;
+}
+.targets-container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+.targets {
+  height: 20vh;
+  width: 20vw;
+  align-items: center;
+  text-align: center;
+}
+.targets img {
+  align-items: center;
+  height: 200px;
+}
+.targets p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+.other-services-container {
+  margin-top: 20vh;
+}
+
+.other-services-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  margin-left: 8%;
+  color: #4c8700;
+}
+.other-services {
+  display: flex;
+  justify-content: space-evenly;
+}
+.services {
+  margin-bottom: 5%;
+  margin-top: 4%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.services li {
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1187px) {
+  .header-line {
+    display: none;
+  }
+  .other-services-container {
+    margin-top: 30vh;
+  }
+  .future-targets {
+    margin-top: 18vh;
+  }
+  .targets-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .targets {
+    width: 25%;
+  }
+  .other-services {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .other-services {
+    margin-bottom: 6%;
+  }
+  .services {
+    margin: 0;
+    margin-top: -20px;
+  }
+  .services li {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .service-container {
+    grid-template-columns: 42vw 42vw;
+  }
+  .service-container2 {
+    width: 45vw;
+    margin-top: 15vh;
+    margin-left: 27.5vw;
+  }
+}
+@media (max-width: 588px) {
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 12vh;
+  }
+  .service-container2 {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 0;
+  }
+  .future-targets {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .targets-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .targets {
+    height: 50vh;
+    width: 50vw;
+    margin-top: -3vh;
+  }
+  .other-services-container {
+    margin-top: 7vh;
+  }
+  .other-services-container h1 {
+    text-align: center;
+  }
+  .services {
+    margin-left: 10vw;
+    width: 85vw;
+  }
+  .services-header {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .service-container {
+    width: 85vw;
+    margin-left: 5vw;
+  }
+  .services-header {
+    margin-top: 8vh;
+  }
+  .service-container2 {
+    width: 85vw;
+    margin-left: 5vw;
+  }
+  .targets {
+    height: 40vh;
+    width: 60vw;
+    margin-top: 0;
+  }
+  .other-services-container {
+    margin-top: 7vh;
+  }
+}
+.app_update_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16vh 0;
+  margin-left: 8vw;
+}
+.app_update_wrapper .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #4c8700;
+}
+.side_block {
+  width: 283px;
+  height: 32px;
+  background-color: #00ac00;
+}
+.app_update {
+  font-size: 20px;
+  padding: 2vh 8vw;
+}
+.images {
+  display: grid;
+  margin: 10vh 8vw;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 5vh;
+}
+
+.images .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img5 img {
+  width: 80vw;
+  height: 60vh;
+}

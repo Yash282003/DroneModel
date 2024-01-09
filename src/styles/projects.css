@@ -1,0 +1,174 @@
+.projectsPage{
+    padding: 0 2rem;
+}
+.projectsTitle{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.projectsTitle.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.projectsTitle h1{
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    color: #4C8700;
+}
+.projectOtherSol{
+    width: 80%;
+    margin: 4rem auto;
+}
+.projectOtherSol div {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.projectOtherSol div ul li {
+margin-top: 0.6rem;
+}
+.caseBox{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.caseBox.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.caseBox:last-child{
+    margin-bottom: 8rem;
+}
+.caseSec1{
+    margin-right: 5rem;
+}
+.caseSec1 h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+.caseSec1 p{
+    margin-bottom: 2.5rem;
+}
+.caseSec1Btn{
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(92.59deg, #A8D46F 4.33%, #CCFF8B 80.83%);
+    border-radius: 1.2rem;
+    padding: 0.5rem 0.8rem;
+
+}
+.caseSec2 img{
+    width: 20rem;
+}
+.caseLine{
+    height: 1px;
+    background: #4C8700;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 6rem;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.caseLine.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .projectsTitle h1{
+        white-space: nowrap;
+    }
+
+    .projectOtherSol{
+        width: 90%;
+        margin: 4rem auto;
+    }
+    .caseBox{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 6rem;
+
+    }
+    .caseSec1{
+        margin-right: 0rem;
+    }
+    .caseSec2 {
+        margin-top: 2rem;
+    }
+    .caseSec2 img{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .projectOtherSol{
+        margin: 4rem auto;
+        margin-top: 2rem;
+    }
+    .caseBox:nth-child(1){
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .projectsTitle h1{
+        white-space: nowrap;
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    .projectsTitle h1{
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+    .caseSec2 img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .projectsPage{
+        padding: 0 1rem;
+    }
+    .projectsTitle{
+        margin-top: 3rem;
+    }
+    .projectOtherSol{
+        width: 100%;
+    }
+    .titleLine{
+        display: none;
+    }
+    .caseBox{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .caseSec1 h3{
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+    }
+    .caseSec2 img{
+        width: 90%;
+    }
+}

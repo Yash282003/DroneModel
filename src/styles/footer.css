@@ -1,0 +1,164 @@
+.footer{
+    background-color: black;
+    color: white;
+    min-height: 22rem;
+    padding: 0 5rem;
+    padding-top: 4rem;
+}
+.footerSec{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    /* background-color: red; */
+}
+.footerSec1{
+    width: 21rem;
+}
+.footerSec2{
+    margin-left: 5rem;
+    width:23rem;
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+.footerText h6{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.follow{
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+.follow h3{
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+
+}
+.follow a{
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+    margin-right: 1.8rem;
+}
+.follow a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 1.8rem;
+}
+.footLogoImg img{
+    display: block;
+    width: 4rem;
+}
+.footLogoText img{
+    display: block;
+width: 13rem;
+}
+.footLogoText{
+    margin-left: 0.5rem;
+}
+.footerSec2 h3{
+    font-size: 1.7rem;
+}
+.footerSec2 p{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+.footerCopyright{
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgb(237, 237, 237);
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .footerSec1{
+        border-right: 0;
+    }
+    .footerSec2{
+        margin-left: 3rem;
+    }
+    .follow{
+        margin-top: 3.5rem;
+    }
+    
+  }
+@media screen and (max-width: 950px) {
+    .footerSec2{
+       width:20rem;
+        margin-left: 1.5rem;
+    }
+    .follow{
+        margin-top: 3.2rem;
+    }
+  }
+@media screen and (max-width: 870px) {
+    .footer{
+        padding: 0 4rem;
+        padding-top: 3.5rem;
+    }
+    .footerSec1{
+        flex: 1;
+    }
+    .footerSec2{
+         flex: 1;
+        margin-left: 1.5rem;
+
+    }
+    .follow{
+        margin-top: 3.2rem;
+    }
+  }
+@media screen and (max-width: 800px) {
+    .footer{
+        padding-top: 2.1rem;
+    }
+    .footerSec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .footerLogo{
+        justify-content: center;
+        margin-bottom: 0.8rem;
+    }
+    .footerText{
+        text-align: center;
+    }
+    .follow{
+        text-align: center;
+    }
+    .follow a{
+        margin-right:0rem;
+    }
+    .follow a:hover{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 0rem;
+    }
+    .followFirst{
+        margin-right: 2rem;
+    }
+    .footerSec2{
+        margin-top: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    .footerSec2 h3{
+        text-align: center;
+        margin-bottom: 0.6rem;
+    }
+    .footerCopyright{
+        padding: 1rem 0;
+        padding-top: 3rem;
+    }
+
+  }
+@media screen and (max-width: 350px) {
+    .footer{        
+        padding :0rem 1rem;
+        padding-top: 2.6rem;
+    }
+
+}

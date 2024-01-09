@@ -1,0 +1,217 @@
+/* .servicesPage {
+  margin: 6rem 1rem;
+  margin-top: 6rem;
+}
+
+.bgimage {
+  width: 100%;
+  height: auto;
+  
+}
+.servicesTitle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 150px;
+}
+.servicesTitle {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceButton {
+  color: #4c8700;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 6px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid #4c8700;
+  background: rgba(76, 135, 0, 0.2);
+}
+h1 {
+  color: #4c8700;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 1500;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+}
+.bgPara {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+ width: 45vw;
+ padding: 4rem;
+
+}
+.bgimage-container{
+  background: url("../components/RentingServicesPage/assets/bgImage.png");
+  background-repeat: no-repeat ;
+  background-size: cover;
+  min-height: 40vh;
+  width: 100%;
+}
+.arrow {
+  font-size: small;
+}
+p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2rem 0;
+}
+
+.titleDescp {
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+.image img {
+  min-width: 25vw;
+  max-width: 70vw;
+  height: 30vh;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #0f0d1a;
+  
+}
+.image{
+  padding: 10px;
+}
+.image1 img {
+  min-width: 25vw;
+  max-width: 70vw;
+  height: 30vh;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #0f0d1a;
+}
+hr {
+  width: 283px;
+  height: 8px;
+  background: #4c8700;
+}
+
+.accordion-simple > .active {
+  display: block;
+}
+
+.accordion__faq .inactive {
+  display: none;
+}
+
+.accordion__faq > div {
+  background-color: var(--white);
+ 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion__title {
+  color: var(--text-secondary);
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.accordion__faq-heading {
+  display: flex;
+  color: #4c8700;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+}
+.accordion__faq-heading .active {
+  color: var(--text-primary);
+}
+
+.accordion__faq-heading h3 {
+  color: var(--text-secondary);
+  padding: 1rem ;
+}
+
+.accordion__faq p {
+  margin: 0px;
+  padding-bottom: 30px;
+  color: var(--text-secondary);
+ 
+}
+
+.accordion__faq-heading .horizental,
+.accordion__faq-heading .verticle {
+  border-radius: 100%;
+  border: 1px solid #4c8700;
+  background: #dbe7cc;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #4c8700;
+
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+.line {
+  height: 20px;
+  border-left: 2px solid #4c8700;
+  position: absolute;
+  margin-left: 23px;
+  margin-top: -9px;
+}
+
+.line.bright {
+  border-color: #007bff; 
+}
+.servicesPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px){
+  .servicesTitle{
+    flex-direction: column-reverse;
+    row-gap: 2vh;
+  }
+  .poster{
+    display: none;
+  }
+  .titleDescp{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgPara{
+    text-align: center;
+    width: 70vw;
+  }
+  .bgimage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reversal{
+    flex-direction: column !important;
+  }
+} */

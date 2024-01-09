@@ -1,0 +1,262 @@
+.ourTeamTitle{
+    margin: 0 2rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.ourTeamTitle.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.titleLine{
+    height: 1px;
+    background-color: #4C8700;
+    width: 100%;
+    max-width: 12rem;
+}
+.ourTeamTitle h1{
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    color: #4C8700;
+}
+.ourTeamTitleIntro{
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0 2rem;
+    width: 70vw;
+}
+.founderTitle{
+    margin: 0 2rem;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.founderTitle.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.founderTitle h1{
+    margin: 0 2rem;
+    font-size: 1.1rem;
+    color: #4C8700;
+}
+.founderSec{
+    display: flex;
+    margin: 5rem 2rem;
+    justify-content: center;
+}
+.founderDetail{
+    width: 60vw;
+    margin-right: 3rem;
+
+    opacity: 0;
+    transform: translate(-20px,10px);
+    transition: 150ms;
+}
+.founderDetail.show{
+    opacity: 1;
+    transform: translate(0);
+}
+.founderDetailTitle{
+    margin-bottom: 2.5rem;
+}
+.founderDetailTitle h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.founderDetailTitle p{
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #636363;
+}
+.founderImgBox{
+    opacity: 0;
+    transform: translate(20px,10px);
+    transition: 150ms;
+}
+.founderImgBox.show{
+    opacity: 1;
+    transform: translate(0);
+}
+.founderImgBox img{
+    width: 16rem;
+}
+.projectTeamTitle{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.projectTeamTitle.show{
+opacity: 1;
+transform: translateY(0);
+}
+.projectTeamTitle h1{
+    margin: 0 2rem;
+    font-size: 1.1rem;
+    color: #4C8700;
+}
+.projectTeamSec{
+    margin: 4rem 2rem;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+.projectTeamMem{
+    width: 21vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 4rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.projectTeamMem.show{
+opacity: 1;
+transform: translateY(0);
+}
+.teamMemImg img{
+    width: 16rem;
+    border-radius: 50%;
+
+}
+.teamMemTitle{
+    margin-bottom: 1rem;
+}
+.teamMemTitle h4{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.teamMemTitle p{
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #636363;
+    text-align: center;
+}
+.projectTeamMem p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1211px) {
+    .projectTeamMem{
+        width: 33vw;
+    }
+}
+@media screen and (max-width: 940px) {
+    .projectTeamMem{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .founderSec{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 70%;
+        margin: 5rem auto;
+
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 150ms;
+    }
+    .founderSec.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .founderImgBox{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .founderDetail{
+        margin-right: 0rem;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+
+
+
+    .founderDetail p{
+        text-align: center;
+
+    }
+    .founderDetailTitle h4,
+    .founderDetailTitle p{
+        text-align: center;
+    }
+    .projectTeamMem{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .ourTeamTitle h1{
+        white-space: nowrap;
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+    .projectTeamTitle{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .ourTeamTitleIntro{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 580px) {
+    .ourTeamTitle h1{
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+    .ourTeamTitleIntro{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .ourTeamTitle{
+        margin-top: 3rem;
+    }
+    .founderTitle{
+        margin-top: 4rem;
+    }
+    .ourTeamTitleIntro{
+        width: 100%;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    .founderSec{
+        width: 100%;
+        margin-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .founderDetail{
+        width: 100%;
+    }
+    .projectTeamSec{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .projectTeamMem {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+}

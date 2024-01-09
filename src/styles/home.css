@@ -1,0 +1,680 @@
+.introCont{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.35)), url("../components/Home/assets/wheat.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    top:-5rem;
+}
+.introContHead{
+    margin-top: 3.3rem;
+    font-size: 5rem;
+    font-weight: 300;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 150ms;
+}
+.introContHead.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.introLineFarmers{
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  
+}
+.introContLine{
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 150ms;
+}
+.introContLine.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.iconsCont{
+    padding: 3rem 1rem;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.iconBox{
+    /* background-color: red; */
+    width: 17vw;
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.iconBoxone{
+    opacity: 0;
+    transform: translate(-20px,10px);
+    transition: 150ms;
+}
+.iconBoxone.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.iconBoxtwo{
+    opacity: 0;
+    transform: translate(20px,10px);
+    transition: 150ms;
+}
+.iconBoxtwo.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.iconBox h6{
+    margin: 0.5rem 0;
+    font-size: 1.16rem;
+    text-align: center;
+}
+.iconBox p{
+    text-align: center;
+    font-size: 0.95rem;
+}
+.missionCont{
+    margin: 4rem 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.missionDetailsBox{
+width: 50vw;
+padding-right: 4rem;
+}
+.missionDetailsBox h3{
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 0;
+}
+.missionDetailsBox h2{
+    font-size: 5rem;
+    color: #4C8700;
+    font-weight: 400;
+}
+.missionDetailsBox p{
+text-align: justify;
+}
+.missionImgBox{
+    display: flex;
+    align-items: flex-start;
+
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 150ms;
+}
+
+.missionImgBox.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.missionImg1{
+    width: 38vw;
+}
+.missionImg2{
+    width: 22vw;
+margin-left: -8rem;
+margin-top: 11rem;
+} 
+.droneImageBox{
+    padding: 4rem 0;
+
+    opacity: 0;
+    transform: scale(90%);
+    transition: 150ms;
+}
+.droneImageBox.show{
+    opacity: 1;
+    transform: scale(100%)
+}
+.droneImageBox img{
+    width: 100%;
+}
+.primaryGoals{
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.primaryGoalsImgBox{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 150ms;
+}
+.primaryGoalsImgBox img{
+    width: 38vw;
+}
+.primaryGoalsImgBox.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.primaryGoalsListBox{
+    width: 45vw;
+}
+.primaryGoalsListBox ul{
+    margin-left: 1rem;
+}
+.primaryGoalsListBox ul li{
+    margin: 0.8rem 0;
+}
+.bhoomicamSec{
+    margin: 4rem 2rem;
+    margin-top: 6rem;
+}
+.bhoomicamHead h3{
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 0;
+}
+.bhoomicamHead h2{
+    font-size: 5rem;
+    color: #4C8700;
+    font-weight: 400;
+}
+.bhoomicam-cont-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.3rem 0;
+}
+.b-c-box-detailBox1{
+    width: 40vw;
+    margin-right: 4rem;
+}
+.b-c-one{
+    opacity: 0;
+    transform: translate(-30px, 40px);
+    transition: 150ms;
+}
+.b-c-one.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.b-c-two{
+    opacity: 0;
+    transform: translate(30px, 40px);
+    transition: 150ms;
+}
+.b-c-two.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.b-c-box-detailBox2{
+    text-align: right;
+    width: 40vw;
+    margin-left: 4rem;
+}
+.home_parallax{
+    background:  linear-gradient(to right, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)), url("../components/Home/assets/spaceship.jpeg") fixed;
+    background-size: 150rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.spaceshipSec{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    height: 30rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.spaceshipSec h4{
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 2rem;
+}
+.spaceshipSec p{
+    margin-top: 0.76rem;
+    width: 60vw;
+    text-align: center;
+    font-weight: 300;
+}
+.spaceSecButton{
+    margin-top: 1.6rem;
+    /* width: 10vw; */
+    text-align: center;
+    background: linear-gradient(92.59deg, #A8D46F 4.33%, rgba(139, 197, 63, 0.75) 80.83%);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1.2rem;
+}
+.ourTeamSec{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 2rem;
+    margin-top:11rem;
+    margin-bottom: 6rem;
+}
+.ourTeamDetail{
+    width: 46vw;
+}
+.ourTeamDetail h3{
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 0;
+}
+.ourTeamDetail h2{
+    font-size: 5rem;
+    color: #4C8700;
+    font-weight: 400;
+}
+.ourTeamDetail p{
+margin-top: 1rem;
+margin-bottom: 3rem;
+}
+.ourTeamDetailBtn{
+    text-decoration: none;
+    color: white;
+    padding: 0.79rem 1.09rem;
+    border-radius: 0.3rem;
+    background: linear-gradient(92.59deg, #A8D46F 4.33%, rgba(139, 197, 63, 0.75) 80.83%);
+}
+.ourTeamImgBox{
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 150ms;
+}
+.ourTeamImgBox.show{
+opacity: 1;
+transform: translate(0,0);
+}
+.ourTeamImgBox img{
+    width: 40vw;
+}
+
+@media screen and (max-width: 1240px) {
+    .primaryGoals{
+        padding: 3.5rem 2rem;
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+    .primaryGoalsListBox{
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    .primaryGoalsImgBox img{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .introContHead{
+        margin-top: 3.3rem;
+        font-size: 4.8rem;
+    }
+    .introContLine{
+        font-size: 2.3rem;
+    }
+    .iconsCont{
+        padding: 0rem 2rem;
+        padding-bottom: 2rem;
+    }
+    .iconBox{
+        width: 22vw;
+    }
+    .iconBox{
+        transform: translateY(20px);
+    }
+    .ourTeamImgBox img{
+        width: 40vw;
+    }
+    .ourTeamSec{
+        margin-top:7rem;
+        margin-bottom: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .introContHead{
+        font-size: 4.3rem;
+    }
+    .introContLine{
+        font-size: 2rem;
+    }
+    .iconBox{
+        width: 30vw;
+    }
+    .missionDetailsBox h3{
+        font-size: 2.2rem;
+    }
+    .missionDetailsBox h2{
+        font-size: 4rem;
+    }
+    .bhoomicamHead{
+        margin-bottom: -1rem;
+    }
+    .bhoomicamHead h3{
+        font-size: 2.2rem;
+    }
+    .bhoomicamHead h2{
+        font-size: 4rem;
+    }
+    .ourTeamDetail h3{
+        font-size: 2.2rem;
+    }
+    .ourTeamDetail h2{
+        font-size: 4rem;
+    }
+    .spaceshipSec{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        width: 100%;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .missionCont{
+        margin: 4rem 0;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .missionDetailsBox{
+        padding-right: 0;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .missionImg1{
+        width: 50vw;
+    }
+    .missionImg2{
+        width: 29vw;
+    margin-left: -6rem;
+    margin-top: 10rem;
+    } 
+    .boxOne{
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .boxTwo{
+        margin-top: 3rem;
+        flex-direction: column-reverse;
+    }
+    .bhoomicamSec{
+        /* margin: 4rem 2rem; */
+        margin: 4rem 2rem;
+        /* padding: 0 2rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bhoomicamHead{
+        width: 90%;
+        margin-bottom: -1rem;
+    }
+    .bhoomicamCont{
+        width: 90%;
+    }
+    .b-c-box-detailBox1{
+        width: 100%;
+        margin-right: 0;
+    }
+    .b-c-box-detailBox2{
+        width: 100%;
+        margin-right: 0;
+    }
+    .b-c-box-imgBox img{
+        width: 40vw;
+    }
+    .b-c-box-detailBox2{
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .b-c-box-text{
+        opacity: 0;
+        transform: translate(-30px, 40px);
+        transition: 150ms;
+    }
+    .b-c-box-text.show{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    .b-c-box-imgBox{
+        opacity: 0;
+        transform: translate(30px, 40px);
+        transition: 150ms;
+    }
+    .b-c-box-imgBox.show{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    .spaceshipSec h4{
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 2rem;
+    }
+    .spaceshipSec p{
+        margin-top: 0.76rem;
+        width: 70vw;
+        text-align: center;
+        font-weight: 300;
+    }
+    .ourTeamSec{
+        width: 90%;
+        margin: 4rem auto;
+        margin-top: 6rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .ourTeamDetail{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .ourTeamDetail p{
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+    }
+    .ourTeamImgBox{
+        transform: translateY(20px);
+    }
+    .ourTeamImgBox img{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .missionDetailsBox{
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .primaryGoalsListBox{
+        width: 100%;
+    }
+    .missionImg1{
+        width: 60vw;
+    }
+    .missionImg2{
+        width: 35vw;
+    margin-left: -8rem;
+    margin-top: 11rem;
+    } 
+    .bhoomicamHead{
+        width: 100%;
+    }
+    .bhoomicamCont{
+        width: 100%;
+    }
+    .b-c-box-imgBox img{
+        width: 60vw;
+    }
+    .ourTeamSec{
+        width: 100%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .introContHead{
+        font-size: 3.5rem;
+        padding: 0 2rem;
+
+    }
+    .introContLine{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .missionImg1{
+        width: 60vw;
+    }
+    .missionImg2{
+        width: 40vw;
+    margin-left: -5rem;
+    margin-top: 6rem;
+    } 
+    .b-c-box-imgBox img{
+        width: 70vw;
+    }
+    .spaceshipSec{
+        margin-top: 4rem;
+        margin-bottom: 4.2rem;
+        width: 100%;
+    }
+    .spaceshipSec h4{
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    .spaceshipSec p{
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 550px) {
+
+    .missionDetailsBox h3{
+        font-size: 2rem;
+    }
+    .missionDetailsBox h2{
+        font-size: 3rem;
+    }
+    
+    .bhoomicamHead h3{
+        font-size: 2rem;
+    }
+    .bhoomicamHead h2{
+        font-size: 3rem;
+    }
+    .ourTeamDetail h3{
+        font-size: 2rem;
+    }
+    .ourTeamDetail h2{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .introContHead{
+        font-size: 2.7rem;
+        padding: 0rem 0rem;
+        margin-top: 0rem;
+
+    }
+    .introContLine{
+        font-size: 1rem;
+        text-align: center;
+        padding: 0rem 0rem;
+    }
+    .iconsCont{
+        padding: 0rem 0rem;
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
+    .iconBox{
+        width: 90%;
+        margin: 1.5rem 0rem;
+    }
+
+    .missionCont{
+        padding: 0 1rem;
+    }
+    .missionImg1{
+        width: 70vw;
+    }
+    .missionImg2{
+        width: 45vw;
+    margin-left: -8rem;
+    margin-top: 6rem;
+    } 
+    .droneImageBox{
+        padding: 0rem 0;
+        padding-bottom: 1.5rem;
+    }
+    .primaryGoals{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .primaryGoalsImgBox{
+        margin: 0 0rem;
+    }
+    .primaryGoalsImgBox img{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .primaryGoalsListBox{
+        margin-bottom: 1.5rem;
+    }
+    .bhoomicamSec{
+        margin: 4rem 1rem;
+    }
+    .bhoomicamCont{
+        overflow: hidden;
+    }
+    .b-c-box-imgBox img{
+        margin-top: 1rem;
+        width: 80vw;
+    }
+    .ourTeamSec{
+        padding: 0 1rem;
+    }
+    .ourTeamDetail p{
+        margin-top: 0.6rem;
+        margin-bottom: 2.5rem;
+    }
+    .ourTeamImgBox img{
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+}
+

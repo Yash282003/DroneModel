@@ -1,0 +1,44 @@
+.gallery_container{
+    width: 89vw;
+    height: auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin:4vh 5.5vw;
+    column-gap: 5vw;
+}
+
+.gallery_title{
+     font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #569602;
+  margin-left: 5.5vw;
+}
+.gallery_pics{
+ display: flex;
+  
+ flex-direction: column;
+ margin: 20px 0;
+}
+.img_desc{
+    text-align: center;
+
+    padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .gallery_pics {
+    width:100%;
+}
+ .gallery_container{
+    grid-template-columns: 1fr;
+
+ }
+ .gallery_title{
+    text-align: center;
+ }
+}

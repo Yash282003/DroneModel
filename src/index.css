@@ -1,0 +1,13 @@
+@import './styles/reset.css';
+@import './styles/navbar.css';
+@import './styles/home.css';
+@import './styles/footer.css';
+@import './styles/team.css';
+@import './styles/about.css';
+@import './styles/projects.css';
+@import './styles/outreach.css';
+@import './styles/pageNotFound.css';
+@import './styles/loader.css';
+@import './styles/services.css';
+@import './styles/servicescard.css';
+@import './styles/gallery.css';

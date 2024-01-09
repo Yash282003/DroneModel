@@ -1,0 +1,50 @@
+  
+  .canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fixed-div {
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    transition: top 0.3s ease;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  /* @media (max-width: 600px) {
+    :root {
+      --top-position: 80px; 
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+    :root {
+      --top-position: 100px; 
+    }
+  }
+   */
+  @media (min-width: 1046px) and (max-width: 1350px) {
+    :root {
+      --top-position: 270vh; 
+    }
+  }
+  @media  (min-width: 1001px) and (max-width:1045px) {
+    :root {
+      --top-position: 280vh; 
+    }
+  }
+  @media(max-width:1600px){
+    :root {
+      --top-position: 270vh; 
+  }}
+  @media(max-width:2000px){
+    :root {
+      --top-position: 200vh; 
+  }
+} 
+ 

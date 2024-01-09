@@ -1,0 +1,229 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.navbarMenu{
+    display: none;
+}
+.sticky{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0.01rem 10px 0 rgba(0, 0, 0, 0.489);
+}
+
+.navLogoBox{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+
+}
+.navLogoImg img{
+    display: block;
+    width: 4rem;
+}
+.navLogoText{
+    margin-left: 0.5rem;
+}
+.navLogoText img{
+    display: block;
+width: 13rem;
+}
+.navbar-button{
+    display: none;
+}
+
+.navListBox{
+    width: 60vw;
+    margin-right: 1rem;
+}
+.navList{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navList li{
+    list-style: none;
+}
+.navListItem{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* color: black; */
+    margin-left: 2.5rem;
+    position: relative;
+}
+/* Style for the dropdown menu */
+.servicesList {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+   top: 100%;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  
+  .servicesList li {
+    padding: 10px;
+    
+
+  }
+  .servicesList li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .servicesList li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Show the dropdown when the parent li is hovered or clicked */
+ 
+  .navList li:focus-within .servicesList {
+    display: block;
+  }
+  
+.navListItem:hover{
+    border-bottom: 2px solid black;
+}
+.navbar-menu{
+    display: none;
+}
+.arrow {
+    display: inline-block;
+    margin-left: 5px; /* Adjust the spacing between the link text and arrow */
+    opacity: 0; /* Initially hide the arrow */
+  }
+  
+  a:hover .arrow {
+    opacity: 1; /* Show the arrow on hover */
+  }
+@media screen and (max-width: 1000px) {
+    .navbar{
+        display: none;
+    }
+    .navLogoImg img{
+        width: 3.4rem;
+    }
+    .navLogoText {
+        margin-left: 0;
+    }
+    .navLogoText img{
+        width: 12.4rem;
+    }
+
+    .navbarMenu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0.5rem;
+        background-color: transparent;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        background-color: rgb(255, 255, 255);
+    }
+    .navTransparent{
+        background: transparent;
+    }
+    .navLogoBox{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-size: 2.6rem;
+        margin-right: 1rem;
+    }
+    .navListBox{
+        display: none;
+    }
+    .navbar-menu{
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding-top: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar-menu-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    .navbar-menu-item{
+        display: block;
+        width: 100%;
+        color: rgba(34, 34, 34, 0.564);
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(71, 71, 71, 0.402);
+        transition: all 0.2s ease-in-out;
+    }
+    .navbar-menu-item:hover{
+        color: rgb(0, 0, 0);
+    }
+
+
+  }
+
+  @media screen and (max-width: 650px) {
+    .navLogoImg img{
+        width: 3rem;
+    }
+    .navLogoText img{
+        width: 11.6rem;
+    }
+    .navbar-button{
+        font-size: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .navLogoBox{
+        margin-left: 0.2rem;
+    }
+    .navbar-button{
+        margin-right: 0.2rem;
+    }
+    .navLogoImg img{
+        width: 3rem;
+    }
+    .navLogoText img{
+        width: 10.6rem;
+    }
+    .navbar-button{
+        font-size: 2.2rem;
+    }
+  }

@@ -1,0 +1,135 @@
+.aboutTitle{
+    margin: 0 2rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 150ms;
+}
+.aboutTitle.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.aboutTitle h1{
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    color: #4C8700;
+}
+.aboutSec{
+    margin: 4rem 2rem;
+    margin-top: 6rem;
+}
+.aboutSecBox{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_division_1{
+    opacity: 0;
+    transform: translate(-20px,10px);
+    transition: 150ms;
+}
+.about_division_1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.about_division_2{
+    opacity: 0;
+    transform: translate(20px,10px);
+    transition: 150ms;
+}
+.about_division_2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.aboutSecBoxImg img{
+    width: 24rem;
+}
+.aboutsecBox1Detail{
+    width: 20vw;
+}
+.aboutsecBox2Detail{
+    text-align: right;
+    width: 20vw;
+}
+.aboutHighlight{
+    color: #4C8700;;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutSec{
+        margin-top: 3.5rem;
+    }
+    .aboutSecBoxImg img{
+        width: 40vw;
+    }
+    .aboutsecBox1Detail{
+        width: 40vw;
+    }
+    .aboutsecBox2Detail{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 750px) {
+    .aboutTitle h1{
+        white-space: nowrap;
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+
+
+    .aboutSecBox {
+        margin-bottom: 1rem;
+    }
+    .aboutsecBox1Detail{
+        margin-left: 2rem;
+    }
+    .aboutsecBox2Detail{
+        margin-right: 2rem;
+    }
+
+
+}
+@media screen and (max-width: 580px) {
+    .aboutTitle h1{
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+    .aboutSecBox {
+        margin: 1.5rem 0;
+    }
+    .about1 {
+        flex-direction: column;
+    }
+    .about2 {
+        flex-direction: column-reverse;
+    }
+    .aboutSecText{
+        width: 100%;
+        text-align: center;
+        margin-right: 0rem;
+        margin-left: 0;
+
+        opacity: 0;
+        transform: translate(30px, 40px);
+        transition: 150ms;
+    }
+    .aboutSecText.show{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    .aboutSecBoxImg{
+        opacity: 0;
+        transform: translate(-30px, 40px);
+        transition: 150ms;
+    }
+
+    .aboutSecBoxImg img{
+        width: 60vw;
+    }
+
+}
